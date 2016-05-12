@@ -1,0 +1,65 @@
+<!-- ++Begin Map Search Control Wizard Generated Code++ -->
+<!--
+// Created with a Google AJAX Search Wizard
+// http://code.google.com/apis/ajaxsearch/wizards.html
+-->
+
+
+
+<!-- Maps Api, Ajax Search Api and Stylesheet
+// Note: If you are already using the Maps API then do not include it again
+//       If you are already using the AJAX Search API, then do not include it
+//       or its stylesheet again
+//
+// The Key Embedded in the following script tags is designed to work with
+// the following site:
+// http://www.lochlymelodge.com
+-->
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAARwkdRj2NWUWEfcaNsbZiJxQK9bqIFIcC0TavsJUs2Lbq8LNzHRS8lMWzVObeZhE5RlayVNNau_SOHA"
+        type="text/javascript"></script>
+<script src="http://www.google.com/uds/api?file=uds.js&amp;v=1.0&amp;source=uds-msw&amp;key=ABQIAAAARwkdRj2NWUWEfcaNsbZiJxQK9bqIFIcC0TavsJUs2Lbq8LNzHRS8lMWzVObeZhE5RlayVNNau_SOHA"
+        type="text/javascript"></script>
+
+<script type="text/javascript">
+    function LoadMapSearchControl() {
+
+        // Create an array of hotspots. Each entry contains and html element
+        // from your page, and the query to execute when that element is clicked
+        var hotspotsList = [
+            { element : document.getElementById("hs01"), query : "Drive In Theatre" },
+            { element : document.getElementById("hs02"), query : "Quechee Gorge Visitor" },
+            { element : document.getElementById("hs03"), query : "45 S Park St, Hanover, NH (Co-Op Food Stores) @43.699498,-72.281248" },
+            { element : document.getElementById("hs04"), query : "Montshire Museum of Science" }
+
+        ];
+
+        var options = {
+            zoomControl : GSmapSearchControl.ZOOM_CONTROL_ENABLE_ALL,
+            title : "Loch Lyme Lodge",
+            url : "http://www.lochlymelodge.com/index.html",
+            idleMapZoom : GSmapSearchControl.ACTIVE_MAP_ZOOM,
+            activeMapZoom : GSmapSearchControl.ACTIVE_MAP_ZOOM,
+            mapTypeControl : GSmapSearchControl.MAP_TYPE_ENABLE_ALL,
+            hotspots : hotspotsList
+        }
+
+
+
+
+
+
+
+        new GSmapSearchControl(
+                document.getElementById("mapsearch"),
+                "Loch Lyme Lodge 70 Orford Rd, Lyme, NH",
+                options
+        );
+
+
+    }
+    // arrange for this function to be called during body.onload
+    // event processing
+    GSearch.setOnLoadCallback(LoadMapSearchControl);
+
+
+</script>
