@@ -5,62 +5,62 @@
 		<track>
 			<title>Welcome to Loch Lyme Lodge</title>
 			<creator></creator>
-			<location>./photos/montage.jpg</location>
+			<location>/photos/montage.jpg</location>
 		</track>
 		
 		<track>
 			<title>Lake Beach</title>
 			<creator></creator>
-			<location>./photos/newbeach2.jpg</location>
+			<location>/photos/newbeach2.jpg</location>
 		</track>
 
 		<track>
 			<title>Lake View</title>
 			<creator></creator>
-			<location>./photos/01.jpg</location>
+			<location>/photos/01.jpg</location>
 		</track>
 		
 		<track>
 			<title>Lake at Dusk</title>
-			<location>./photos/19.jpg</location>
+			<location>/photos/19.jpg</location>
 		</track>
 		<track>
 			<title>View from a Boat</title>
-			<location>./photos/lakeview.jpg</location>
+			<location>/photos/lakeview.jpg</location>
 		</track>
 		
 		<track>
 			<title>Cabin</title>
-			<location>./photos/lv.jpg</location>
+			<location>/photos/lv.jpg</location>
 		</track>
 				
 		<track>
 			<title>Dining Room</title>
-			<location>./photos/25.jpg</location>
+			<location>/photos/25.jpg</location>
 		</track>
 		
 		<track>
 			<title>Kayaking</title>
-			<location>./photos/17.jpg</location>
+			<location>/photos/17.jpg</location>
 		</track>
 
 <track>
 			<title>Loch Lyme Lodge</title>
-			<location>./photos/lodgenight.jpg</location>
+			<location>/photos/lodgenight.jpg</location>
 		</track>
 <track>
 <title>MorningRise</title>
-			<location>./photos/21.jpg</location>
+			<location>/photos/21.jpg</location>
 		</track>
 <track>		
 <title>LifeJackets</title>
 
-			<location>./photos/lj.jpg</location>
+			<location>/photos/lj.jpg</location>
 		</track>	
 		<track>
 <title>Fishing</title>
 
-			<location>./img/jgaudet.jpg</location>
+			<location>/img/jgaudet.jpg</location>
 		</track>		
 	</trackList>
 </playlist>
