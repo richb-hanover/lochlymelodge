@@ -24,6 +24,7 @@
 			<title>Lake at Dusk</title>
 			<location>/photos/19.jpg</location>
 		</track>
+		
 		<track>
 			<title>View from a Boat</title>
 			<location>/photos/lakeview.jpg</location>
@@ -44,23 +45,25 @@
 			<location>/photos/17.jpg</location>
 		</track>
 
-<track>
+		<track>
 			<title>Loch Lyme Lodge</title>
 			<location>/photos/lodgenight.jpg</location>
 		</track>
-<track>
-<title>MorningRise</title>
+
+		<track>
+			<title>MorningRise</title>
 			<location>/photos/21.jpg</location>
 		</track>
-<track>		
-<title>LifeJackets</title>
 
+		<track>		
+			<title>LifeJackets</title>
 			<location>/photos/lj.jpg</location>
 		</track>	
-		<track>
-<title>Fishing</title>
 
+		<track>
+			<title>Fishing</title>
 			<location>/img/jgaudet.jpg</location>
 		</track>		
+
 	</trackList>
 </playlist>
