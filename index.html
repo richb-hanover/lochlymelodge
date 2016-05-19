@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cabins and Cottages in NH B&B or Housekeeping- A lakeside, pet-friendly family vacation and reunion spot in Lyme,New Hampshire
+title: Cabins and Cottages in NH B&B or Housekeeping &mdash; A lakeside, pet-friendly family vacation and reunion spot in Lyme,New Hampshire
 ---
 
     <h1 class="pagetitle">Bed &amp; Breakfast &amp; Housekeeping Cabins/Cottages in New Hampshire</h1>
@@ -39,7 +39,7 @@ title: Cabins and Cottages in NH B&B or Housekeeping- A lakeside, pet-friendly f
             <div id="container" >
                 <img class="left" src="img/montage.jpg" alt="family vacation" title="family vacation" /></div>
 
-
+                <div id="bannerswf"></div>
 
 
 
@@ -415,4 +415,16 @@ title: Cabins and Cottages in NH B&B or Housekeeping- A lakeside, pet-friendly f
 
 
     </div>
+
+<!-- script to rotate images on home page -->
+    <script type="text/javascript">
+        var s1 = new SWFObject('/flash/imagerotator.swf','bannerswf','640px','400px','9','#000000');
+        s1.addParam("allowfullscreen","true");
+        s1.addParam("allowscriptaccess","always");
+        s1.addParam("wmode","transparent");
+        s1.addVariable("shuffle","false");
+        s1.addParam("flashvars","file=/flash/imagerotator.xml&amp;width=640&amp;height=400&amp;screencolor=0xFFFFFF&amp;backcolor=0xFF881E&amp;textsize=8&amp;rotatetime=10&amp;shuffle=false&amp;linktarget=_self&amp;linkfromdisplay=true");
+        s1.write("container");
+    </script>
+
 
