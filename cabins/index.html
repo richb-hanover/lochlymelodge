@@ -67,7 +67,7 @@ breadcrumb: Cabins at a Glance
         <td>Yes</td><td>Yes</td>
       </tr>
       <tr>
-        <th scope="row">Balsam</th>
+        <th scope="row">{% include cabinlinks/balsam.html %}</th>
         <td>1-6</td>
         <td>Three</td>
          <td>One Queen</td>
@@ -80,7 +80,7 @@ breadcrumb: Cabins at a Glance
       <td>Yes</td>
       </tr>
       <tr>
-        <th scope="row">Beechwood</th>
+        <th scope="row">{% include cabinlinks/beechwood.html %}</th>
         <td>1-5</td>
         <td>Two</td>
          <td>One Queen Bed</td>
@@ -93,7 +93,7 @@ breadcrumb: Cabins at a Glance
       </tr>
 
       <tr>
-        <th scope="row">Fernwood</th>
+        <th scope="row">{% include cabinlinks/fernwood.html %}</th>
         <td>1-5</td>
         <td>Two</td>
          <td>One King Bed</td>
@@ -106,7 +106,7 @@ breadcrumb: Cabins at a Glance
       <td>Yes</td>
       </tr>
       <tr>
-        <th scope="row">Iron &amp; Basswood</th>
+        <th scope="row">{% include cabinlinks/ironwood.html %}</th>
         <td>1-8</td>
          <td>Four</td>
         <td>One King Bed</td>
@@ -118,7 +118,7 @@ breadcrumb: Cabins at a Glance
       <td>Yes</td>
       </tr>
 <tr>
-        <th scope="row">Lakefield</th>
+        <th scope="row">{% include cabinlinks/lakefield.html %}</th>
         <td>1-6</td>
          <td>Three</td>
         <td>One King Bed;</td>
@@ -131,7 +131,7 @@ breadcrumb: Cabins at a Glance
       <td>2 porches</td>
       </tr>
       <tr>
-        <th scope="row">Lakeside</th>
+        <th scope="row">{% include cabinlinks/lakeside.html %}</th>
         <td>1-5</td>
          <td>Three</td>
         <td>One King Bed</td>
@@ -143,7 +143,7 @@ breadcrumb: Cabins at a Glance
       <td>Yes</td><td>Yes</td>
       </tr>
        <tr>
-        <th scope="row">Pine &amp; Pop'lwood</th>
+        <th scope="row">{% include cabinlinks/pinewood.html %}</th>
          <td>1-3</td>
       <td>One</td>
       <td>One Queen</td>
@@ -156,7 +156,7 @@ breadcrumb: Cabins at a Glance
       <td>Yes</td><td>Yes</td>
       </tr>
       <tr>
-        <th scope="row">Rockwood</th>
+        <th scope="row">{% include cabinlinks/rockwood.html %}</th>
         <td>1-6</td>
          <td>Three</td>
           <td>One King</td>
@@ -168,7 +168,7 @@ breadcrumb: Cabins at a Glance
       <td>Kitchen area in living room</td><td>Yes</td>
       </tr>
       <tr>
-        <th scope="row">Wildwood</th>
+        <th scope="row">{% include cabinlinks/wildwood.html %}</th>
         <td>1-3</td>
       <td>One</td>
       <td>One Queen</td>
@@ -191,15 +191,19 @@ breadcrumb: Cabins at a Glance
           <table>
             <tr><th class="top" scope="col">Cabin Name</th><th class="top" scope="col">Sleeps</th><th class="top" scope="col">Number of Bedrooms</th><th class="top" scope="col">Bedroom 1</th><th class="top" scope="col">Bedroom 2</th><th class="top" scope="col">Daybed in Living Room</th><th class="top" scope="col">Fireplace in Living Room</th><th class="top" scope="col">Bath</th><th class="top" scope="col">Porch</th><th class="top" scope="col">Screened Porch</th></tr>
             
-          <tr><th scope="row">Butternutwood</th><td>1-5</td><td>Two</td><td>One King Bed</td><td>Two Twin Beds</td><td>Futon</td><td>Yes</td><td>Yes</td>
+      <tr><th scope="row">{% include cabinlinks/butternutwood.html %}</th><td>1-5</td>
+      <td>Two</td><td>One King Bed</td><td>Two Twin Beds</td><td>Futon</td><td>Yes</td><td>Yes</td>
       <td>No</td>
       <td>Yes</td>
       </tr>
-      <tr><th scope="row">Cherrywood</th><td>1-3</td><td>One</td><td>One Queen Bed</td><td></td><td>Futon</td><td>Yes</td><td>Yes</td>
+
+      <tr><th scope="row">{% include cabinlinks/cherrywood.html %}</th><td>1-3</td>
+      <td>One</td><td>One Queen Bed</td><td></td><td>Futon</td><td>Yes</td><td>Yes</td>
       <td>Yes</td>
       <td>No</td>
       </tr>
-      <tr><th scope="row">Deep &amp; Dellwood</th><td>1-4</td>
+
+      <tr><th scope="row">{% include cabinlinks/deepwood.html %}</th><td>1-4</td>
       <td>Two</td>
       <td>One King Bed</td>
       <td>Two Twin Beds</td>
@@ -209,24 +213,28 @@ breadcrumb: Cabins at a Glance
       <td>No</td>
       <td>Yes</td>
       </tr>
-      <tr><th scope="row">Edgewood</th><td>1-3</td><td>One</td>
+
+      <tr><th scope="row">{% include cabinlinks/edgewood.html %}</th><td>1-3</td><td>One</td>
       <td>One King Bed</td>
       <td></td>
       <td>One Twin Bed</td>
       <td>Yes</td><td>Yes</td>
       <td>Yes</td><td>No</td></tr>
-      <tr><th scope="row">Glenwood</th><td>1-3</td><td>One</td>
+
+      <tr><th scope="row">{% include cabinlinks/glenwood.html %}</th><td>1-3</td><td>One</td>
       <td>One King Bed</td>
       <td></td>
       <td>Futon</td><td>Yes</td><td>Yes</td>
       <td>Yes</td><td>No</td></tr>
-      <tr><th scope="row">Knollwood</th><td>1-3</td>
+
+      <tr><th scope="row">{% include cabinlinks/knollwood.html %}</th><td>1-3</td>
       <td>One</td>
       <td>One King Bed</td>
       <td></td>
       <td>One Twin Bed</td><td>Yes</td><td>Yes</td>
       <td>Yes</td><td>No</td></tr>
-      <tr><th scope="row">Larch &amp; Laurelwood</th><td>1-6</td>
+
+      <tr><th scope="row">{% include cabinlinks/larchwood.html %}</th><td>1-6</td>
       <td>Two</td>
       <td>One Queen Bed and Two Twin Beds</td>
       <td>One Queen Bed</td>
@@ -235,7 +243,8 @@ breadcrumb: Cabins at a Glance
       <td>No</td>
       <td>Yes</td>
       </tr>
-      <tr><th scope="row">Maplewood</th><td>1-5</td>
+
+      <tr><th scope="row">{% include cabinlinks/maplewood.html %}</th><td>1-5</td>
       <td>Two</td>
       <td>One King Bed</td>
       <td>Two Twin Beds</td> 
@@ -243,20 +252,21 @@ breadcrumb: Cabins at a Glance
       <td>No</td>
       <td>Yes</td>
       </tr>
-        <tr>
-          <th scope="row">Sprucewood</th><td>1-4</td>
-        <td>One</td>
-        <td>One King Bed</td>
+        
+      <tr><th scope="row">{% include cabinlinks/sprucewood.html %}</th><td>1-4</td>
+      <td>One</td>
+      <td>One King Bed</td>
       <td></td>
-        <td>One Twin Bed and One Double Sofa bed</td>
-        <td>Yes</td>
-        <td>Yes</td><td>Yes</td><td>No</td></tr>
-        <tr><th scope="row">Wicopywood</th><td>1-3</td>
-        <td>One</td>
-            <td>Two Twin Beds</td>
-            <td></td>
-        <td>One Twin Bed</td>
-        <td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+      <td>One Twin Bed and One Double Sofa bed</td>
+      <td>Yes</td>
+      <td>Yes</td><td>Yes</td><td>No</td></tr>
+
+      <tr><th scope="row">{% include cabinlinks/wicopywood.html %}</th><td>1-3</td>
+      <td>One</td>
+      <td>Two Twin Beds</td>
+      <td></td>
+      <td>One Twin Bed</td>
+      <td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
 
           </table>
                  </div>
