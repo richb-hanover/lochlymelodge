@@ -1,17 +1,18 @@
 <!-- breadcrumbs from 
 http://stackoverflow.com/questions/9612235/what-are-some-good-ways-to-implement-breadcrumbs-on-a-jekyll-site -->
+<!-- &#9654; is a right-pointing triangle character used to separate the path items -->
+
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 
 <a href="/">Home</a>
 {% for crumb in crumbs offset: 1 %}
   {% if forloop.last %}
     {% if page.breadcrumb != '' %}
-    / <a href="#">{{ page.breadcrumb }} </a>
+    &#9654; <a href="#">{{ page.breadcrumb }} </a>
     {% else %}
-    / <a href="#">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+    &#9654; <a href="#">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
     {% endif %}
-    }
   {% else %}
-    / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+    &#9654; <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
   {% endif %}
 {% endfor %}
