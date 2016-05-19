@@ -42,15 +42,13 @@
 
         <!-- A.4 BREADCRUMB and SEARCHFORM -->
         <div class="header-bottom">
-
+            
             <!-- Breadcrumb -->
             <ul>
                 <li class="nobullet">You are here:&nbsp;</li>
-                <li><a href="#">Home</a></li>
-
+                <!-- <li><a href="#">Home</a></li> -->
+                <li> {% include breadcrumbs.html %} </li>
             </ul>
-            <p></p>
-
 
             <!-- Live Search -->
         </div>
@@ -87,8 +85,6 @@
     <!-- *********************************   END OF AVAILABLE GRID STYLES   ******************************* -->
     <!-- ************************************************************************************************** -->
     <!-- ************************************************************************************************** -->
-
-{% include breadcrumbs.html %}
 
 {% include footer.html %}
 </div>
