@@ -87,7 +87,7 @@
 .navbar ul li:hover ul li a:hover {background-color:rgb(255,152,0); text-decoration:none;} /*Color subcells hovering mode*/
 
 /* SUBMENU (IE6 hovering) */
-.navbar table {position:absolute; z-index:1000; top:0px; left:-1px; border-collapse:collapse;}
+/*.navbar table {position:absolute; z-index:1000; top:0px; left:-1px; border-collapse:collapse;}*/
 .navbar ul li a:hover {position:relative /*Sylvain IE hack*/; z-index:1000 /*Sylvain IE hack*/; background-color:rgb(255,181,81); text-decoration:none;} /*Color main cells hovering mode*/
 .navbar ul li a:hover ul {display:block; width:10.0em; position:absolute; z-index:1000; top:3.1em; t\op:3.0em; left:0px; marg\in-top:0.1em; border-top:solid 1px rgb(102,102,51); }
 .navbar ul li a:hover ul li a {white-space:normal; display:block; w\idth:11.0em; height:1px; line-height:1.3em; padding:4px 16px 4px 16px; border-right:solid 1px rgb(102,102,51); border-left:solid 1px rgb(102,102,51); border-bottom: solid 1px rgb(102,102,51); background-color:rgb(255,181,81); font-weight:normal; color:rgb(100,100,100);} /*Color subcells normal mode*/

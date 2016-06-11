@@ -16,7 +16,7 @@
 /* GLOBAL LAYOUT  */
 /******************/
 
- body {font-size:68%; background-color:rgb(240,240,240); font-family:arial,sans-serif;} /*Font-size: 1.0em = 10px when browser default size is 16px*/
+ body {font-size:62.5%; background-color:rgb(240,240,240); font-family:arial,sans-serif;} /*Font-size: 1.0em = 10px when browser default size is 16px*/
 .container {width:978px; padding-top:10px; padding-bottom:20px; margin:0 auto; font-size:1.0em;}
 .header {width:958px; min-height:130px /*Non-IE6*/; height:auto !important /*Non-IE6*/; height:130px /*IE6*/; border-left:solid 10px rgb(122,148,49); border-right:solid 10px rgb(122,148,49); background:rgb(255,152,0) url(../img/bg_header.jpg) repeat-x /*Total header background image entered here. Height: 125px*/; font-size:1.0em;}
 .header-top {clear:both; width:958px; height:100px; background:rgb(218,218,218) url(../img/bg_header.jpg) repeat-x /*Top header background image entered here. Height: 100px*/; font-size:1.0em;}
@@ -90,7 +90,7 @@
 .navbar ul li:hover ul li a:hover {background-color:rgb(255,152,0); text-decoration:none;} /*Color subcells hovering mode*/
 
 /* SUBMENU (IE6 hovering) */
-.navbar table {position:absolute; z-index:1000; top:0px; left:-1px; border-collapse:collapse;}
+/*.navbar table {position:absolute; z-index:1000; top:0px; left:-1px; border-collapse:collapse;} */
 .navbar ul li a:hover {position:relative /*Sylvain IE hack*/; z-index:1000 /*Sylvain IE hack*/; background-color:rgb(255,181,81); text-decoration:none;} /*Color main cells hovering mode*/
 .navbar ul li a:hover ul {display:block; width:10.0em; position:absolute; z-index:1000; top:3.1em; t\op:3.0em; left:0px; marg\in-top:0.1em; border-top:solid 1px rgb(102,102,51); }
 .navbar ul li a:hover ul li a {white-space:normal; display:block; w\idth:10.0em; height:1px; line-height:1.3em; padding:4px 16px 4px 16px; border-right:solid 1px rgb(102,102,51); border-left:solid 1px rgb(102,102,51); border-bottom: solid 1px rgb(102,102,51); background-color:rgb(255,181,81); font-weight:normal; color:rgb(255,255,255);} /*Color subcells normal mode*/
