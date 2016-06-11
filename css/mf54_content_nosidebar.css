@@ -145,6 +145,7 @@
 .content .loginform input.button:hover {cursor:pointer; border:solid 1px rgb(80,80,80); background:rgb(220,220,220); color:rgb(80,80,80);}
 
 /* SEARCH FORM (1-Column / 2-Column / 3-Column)*/
+/*
 .content .searchform {width:918px; margin:1.0em 10px 0 20px;}
 .content-2col-nobox-leftcolumn .searchform, .content-2col-nobox-rightcolumn .searchform, .content-2col-box-leftcolumn .searchform, .content-2col-box-rightcolumn .searchform {width:438px; margin:1.0em 10px 0 20px;;}
 .content-3col-nobox-leftcolumn .searchform, .content-3col-nobox-middlecolumn .searchform, .content-3col-nobox-rightcolumn .searchform, .content-3col-box-leftcolumn .searchform, .content-3col-box-middlecolumn .searchform, .content-3col-box-rightcolumn .searchform {width:277px; margin:1.0em 10px 0 20px;;}
@@ -153,6 +154,7 @@
 .content .searchform input.field {float:left; width:158px; padding:3px 0 3px 0; border:1px solid rgb(200,200,200); font-size:120%;}
 .content .searchform input.button {clear:both; float:left; width:3.0em; margin-top:0.5em; padding:1px; background:rgb(230,230,230); border:solid 1px rgb(150,150,150); text-align:center; color:rgb(150,150,150); font-size:120%;}
 .content .searchform input.button:hover {cursor:pointer; border:solid 1px rgb(80,80,80); background:rgb(220,220,220); color:rgb(80,80,80);}
+*/
 
 /* MEDIA PLAYER (1-Column / 2-Column / 3-Column)*/
 .content .videoplayer {width:908px; height:532px; margin:10px 20px 10px 20px; border:solid 5px rgb(175,175,175);}
