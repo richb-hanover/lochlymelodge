@@ -1,14 +1,124 @@
-{% include navbarcss.html %}
 
-<div class="navbar">
+<style>
+/* Menu Styles */
 
-    <!-- Navigation item -->
-    <ul>
-        <li><a href="/index.html">Home</a></li>
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-menu > li
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level-menu > li:hover { background: #CCCCCC; }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: #999999;
+}
+.second-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height:30px;
+    background: rgb(191,198,60);
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    /*width: 100px;*/
+    padding: 0px 10px 0px 10px;
+    /*background: #999999;*/
+
+}
+.top-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 10px;
     
-        <li><a href="/cabins/index.html">Cabins<!--[if IE 7]><!--></a><!--<![endif]-->
-            <!--[if lte IE 6]><table><tr><td><![endif]-->
-            <ul>
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+.top-level-menu a:hover { color: #000000; }
+</style>
+
+<style>
+/* ====== Google Custom Search Engine CSS ===== */
+.gsc-input-box {
+    background: none !important;
+    border: none !important;
+    height: auto !important;
+    width: 200px;
+}
+table.gsc-search-box {
+    width: 300px;
+    background-color:rgb(191,198,60);
+    /*height:2.9em; */
+}
+.gsc-search-box .gsc-input>input:hover,
+.gsc-input-box-hover {
+  border: none !important;
+}
+.gsc-search-box .gsc-input>input:focus,
+.gsc-input-box-focus {
+  border: none !important;
+}
+.gsc-result .gs-title {
+     line-height: 1.5em !important;
+}
+input.gsc-input {
+    border: 1px solid #d9d9d9 !important;
+}
+</style>
+
+<ul class="top-level-menu">
+    <li><a href="#">Home</a></li>
+    <li>
+        <a href="/cabins/index.html">Cabins</a>
+            <ul class="second-level-menu">
                 <li><a href="/cabins/index.html">Cabins at a Glance</a></li>
                 <li><a href="/cabins/effcabins.html">Housekeeping Cabins</a></li>
                 <li><a href="/cabins/bbcabins.html">B&amp;B Cabins</a></li>
@@ -16,37 +126,31 @@
                 <li><a href="/cabins/ratesbb.html">Rates &mdash; B&amp;B</a></li>
                 <li><a href="/cabins/map_of_cabins.html">Cabin Map</a></li>
             </ul>
-        </li>
+    </li>
+    <li>
+        <a href="#">Facilities</a>
+        <ul class="second-level-menu">
+            <li><a href="/about/facilities.html">Facilities at the Lodge</a></li>
+            <li><a href="/about/activities.html">Activities</a></li>
+            <li><a href="/cabins/pet_friendly_hotel.html">Pet Friendly</a></li>
+            <li><a href="/cabins/greenvacations.html">Green Vacations</a></li>
+            <li><a href="/about/directions.html">Nearby Destinations</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Restaurant</a></li>
+    <li><a href="#">Weddings</a></li>
+    <li><a href="#">Book Now</a></li>
+    <li>
+        <a href="#">Contact</a>
+        <ul class="second-level-menu">
+            <li><a href="/about/index.html">About Loch Lyme Lodge</a></li>
+            <li><a href="/about/directions.html">Directions</a></li>
+            <li><a href="/about/news.html">Latest News</a></li>
+            <li><a href="/about/employment.html">Employment</a></li>
+        </ul>
+    </li>
     
-        <li><a href="/about/facilities.html">Facilities<!--[if IE 7]><!--></a><!--<![endif]-->
-            <!--[if lte IE 6]><table><tr><td><![endif]-->
-            <ul>
-                <li><a href="/about/facilities.html">Facilities at the Lodge</a></li>
-                <li><a href="/about/activities.html">Activities</a></li>
-                <li><a href="/cabins/pet_friendly_hotel.html">Pet Friendly</a></li>
-                <li><a href="/cabins/greenvacations.html">Green Vacations</a></li>
-                <li><a href="/about/directions.html">Nearby Destinations</a></li>
-            </ul>
-
-        <li><a href="/restaurant/index.html">Restaurant</a></li>
-
-        <li><a href="/weddings/index.html">Weddings</a></li>
-
-        <!--  -->
-
-        <li><a href="https://reserve3.resnexus.com/resnexus/Reservations/Lodging/95DCDF10-84DF-4B1F-BB16-796266A6BA67" target="_blank">Book Now</a></li>
-
-        <li><a href="/about/index.html">Contact<!--[if IE 7]><!--></a><!--<![endif]-->
-            <!--[if lte IE 6]><table><tr><td><![endif]-->
-            <ul>
-                <li><a href="/about/index.html">About Loch Lyme Lodge</a></li>
-                <li><a href="/about/directions.html">Directions</a></li>
-                <li><a href="/about/news.html">Latest News</a></li>
-                <li><a href="/about/employment.html">Employment</a></li>
-            </ul>
-        </li>
-    </ul>
-        <div style="display:inline;">
+    <div style="display:inline;">
         <script>
           (function() {
             var cx = '003665979835614801929:nykoiky64qc';
@@ -60,4 +164,6 @@
         </script>
         <gcse:searchbox-only resultsUrl="/about/searchresults.html"></gcse:searchbox-only>
         </div>
-</div>
+</ul>
+
+
