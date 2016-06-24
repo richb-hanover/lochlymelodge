@@ -1,43 +1,114 @@
 <style>
+/* Menu Styles */
 
-.navbar {white-space:nowrap /*IE hack*/; float:left; width:958px; border-left:solid 0px rgb(122,148,49); border-right:solid 0px rgb(122,148,49); background-color:rgb(191,198,60); font-family:tahoma,arial,sans-serif; font-size:120% !important /*Non-IE6*/; font-size:120% /*IE6*/;} /*Color navigation bar normal mode*/
-/* BUTTON NAVIGATION */
-.navbutton {width:400px; position:absolute; z-index:2; margin-top:26px; margin-left:547px !important /*Non-IE6*/; margin-left:550px /*IE6*/;}
-.navbutton ul {float:right;}
-.navbutton li {display:inline; list-style:none;}
-.navbutton li a {padding-left:3px;}
-.navbutton a:hover {text-decoration:none;}
-.navbutton a img {height:32px;}
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
 
-/* GLOBAL NAVIGATION */
-.navglobal {width:600px; position:absolute; z-index:3; margin-top:35px; margin-left:350px !important /*Non-IE6*/; margin-left:351px /*IE6*/;}
-.navglobal ul {float:right; font-weight:normal;}    
-.navglobal li {display:inline; list-style:none;}
-.navglobal li a {display:block; float:left; padding:2px 5px 2px 5px; color:rgb(220,220,220); text-decoration:none; font-size:130% !important /*Non-IE6*/; font-size:120% /*IE6*/;}
-.navglobal a:hover {text-decoration:none; color:rgb(255,255,255);}
+.third-level-menu > li
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level-menu > li:hover { background: rgb(255,181,81); }
 
-/********************/
-/*  NAVIGATION BAR  */
-/********************/
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
 
-/* MAIN MENU */
-.navbar ul {list-style-type:none;}
-.navbar ul li {float:left; z-index:auto !important /*Non-IE6*/; z-index:1000 /*IE6*/; background-color:rgb(191,198,60);}
-.navbar ul li a {float:none !important /*Non-IE6*/; float:left /*IE-6*/; display:block; height:3.1em; line-height:3.1em; padding:0 14px 0 14px; text-decoration:none; font-weight:bold; color:rgb(255,255,255); border-right:solid 0px rgb(102,102,51);}
-.navbar ul li ul {display:none; border:none;}
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: #999999;
+}
+.second-level-menu > li:hover { background: rgb(255,181,81); }
 
-/* SUBMENU (Non-IE6 hovering) */
-.navbar ul li:hover {position:relative;} /*Sylvain IE hack*/
-.navbar ul li:hover a {background-color:rgb(255,181,81); text-decoration:none;} /*Color main cells hovering mode*/
-.navbar ul li:hover ul {display:block; width:10.0em; position:absolute; z-index:1000; top:3.0em; margin-top:0.1em; left:0; padding:0px 16px 0px 16px; border-top:solid 1px rgb(102,102,51);}
-.navbar ul li:hover ul li a {white-space:normal; display:block; width:10.0em; height:auto; line-height:1.3em; margin-left:-17px; padding:4px 16px 4px 16px; border-right:solid 1px rgb(102,102,51); border-left:solid 1px rgb(102,102,51); border-bottom: solid 1px rgb(102,102,51); background-color:rgb(255,181,81); font-weight:normal; color:rgb(255,255,255);} /*Color subcells normal mode*/
-.navbar ul li:hover ul li a:hover {background-color:rgb(255,152,0); text-decoration:none;} /*Color subcells hovering mode*/
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height:30px;
+    background: rgb(191,198,60);
+}
 
-/* SUBMENU (IE6 hovering) */
-/*.navbar table {position:absolute; z-index:1000; top:0px; left:-1px; border-collapse:collapse;} */
-.navbar ul li a:hover {position:relative /*Sylvain IE hack*/; z-index:1000 /*Sylvain IE hack*/; background-color:rgb(255,181,81); text-decoration:none;} /*Color main cells hovering mode*/
-.navbar ul li a:hover ul {display:block; width:10.0em; position:absolute; z-index:1000; top:3.1em; t\op:3.0em; left:0px; marg\in-top:0.1em; border-top:solid 1px rgb(102,102,51); }
-.navbar ul li a:hover ul li a {white-space:normal; display:block; w\idth:10.0em; height:1px; line-height:1.3em; padding:4px 16px 4px 16px; border-right:solid 1px rgb(102,102,51); border-left:solid 1px rgb(102,102,51); border-bottom: solid 1px rgb(102,102,51); background-color:rgb(255,181,81); font-weight:normal; color:rgb(255,255,255);} /*Color subcells normal mode*/
-.navbar ul li a:hover ul li a:hover {background-color:rgb(255,152,0); text-decoration:none;} /*Color subcells hovering mode*/
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    /*width: 100px;*/
+    padding: 0px 10px 0px 10px;
+    /*background: #999999;*/
 
+}
+.top-level-menu > li:hover { background: rgb(255,181,81); }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+.top-level-menu a:hover { color: #000000; }
+</style>
+
+<style>
+/* ====== Google Custom Search Engine CSS ===== */
+.gsc-input-box {
+    background: none !important;
+    border: none !important;
+    height: auto !important;
+    width: 200px;
+}
+table.gsc-search-box {
+    width: 300px;
+    background-color:rgb(191,198,60);
+    /*height:2.9em; */
+}
+.gsc-search-box .gsc-input>input:hover,
+.gsc-input-box-hover {
+  border: none !important;
+}
+.gsc-search-box .gsc-input>input:focus,
+.gsc-input-box-focus {
+  border: none !important;
+}
+.gsc-result .gs-title {
+     line-height: 1.5em !important;
+}
+input.gsc-input {
+    border: 1px solid #d9d9d9 !important;
+}
 </style>
