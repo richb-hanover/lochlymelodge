@@ -8,7 +8,7 @@ http://www.lochlymelodge.com/bbcabins.html
 http://www.lochlymelodge.com/map_of_cabins.html
 http://www.lochlymelodge.com/ratesbb.html
 http://www.lochlymelodge.com/rates_house.html
-http://www.lochlymelodge.com/restaurant.html
+http://www.lochlymelodge.com/restaurant/
 http://www.lochlymelodge.com/directions.html
 http://www.lochlymelodge.com/greenvacations.html
 http://www.lochlymelodge.com/activities.html
