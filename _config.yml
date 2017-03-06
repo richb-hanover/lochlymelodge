@@ -1,4 +1,8 @@
 # Site settings
+#
+# To test locally, enter:
+#    jekyll serve
+#
 title: Loch Lyme Lodge website
 email: info@lochlymelodge.com
 description: > # this means to ignore newlines until "baseurl:"
